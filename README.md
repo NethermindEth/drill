@@ -26,16 +26,16 @@ This is the list of all features supported by the current version of `drill`:
 - **Concurrency:** run your benchmarks choosing the number of concurrent iterations.
 - **Multi iterations:** specify the number of iterations you want to run the benchmark.
 - **Ramp-up:** specify the amount of time it will take `drill` to start all iterations.
-- **Delay:** introduce controlled delay between requests. Example: [assigns.yml](./example/delay.yml)
+- **Delay:** introduce controlled delay between requests.
 - **Dynamic urls:** execute requests with dynamic interpolations in the url, like `/api/users/{{ item }}`
-- **Dynamic headers:** execute requests with dynamic headers. Example: [headers.yml](./example/headers.yml)
+- **Dynamic headers:** execute requests with dynamic headers.
 - **Interpolate environment variables:** set environment variables, like `/api/users/{{ EDITOR }}`
 - **Request dependencies:** create dependencies between requests with `assign` and url interpolations.
 - **Split files:** organize your benchmarks in multiple files and include them.
 - **CSV support:** read CSV files and build N requests fill dynamic interpolations with CSV data.
 - **HTTP methods:** build request with different http methods like GET, POST, PUT, PATCH, HEAD or DELETE.
 - **Cookie support:** create benchmarks with sessions because cookies are propagates between requests.
-- **Stats:** get nice statistics about all the requests. Example: [cookies.yml](./example/cookies.yml)
+- **Stats:** get nice statistics about all the requests. 
 - **Thresholds:** compare the current benchmark performance against a stored one session and fail if a threshold is exceeded.
 
 ## Command line interface
