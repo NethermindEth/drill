@@ -1,6 +1,4 @@
-# Running benchmark
-
-## Prerequisits
+# Benchmarking with drill
 
 ### Install drill and run
 
