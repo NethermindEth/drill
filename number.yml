@@ -1,0 +1,27 @@
+---
+
+base: 'http://localhost:8545'
+iterations: 100000 # specify the number of iterations you want to run the benchmark
+concurrency: 100 # run your benchmarks choosing the number of concurrent iterations.
+rampup: 3 # specify the amount of time it will take drill to start all iterations.
+
+# thresholds: compare the current benchmark performance against a stored one session and fail if a threshold is exceeded.
+#     -t, --threshold <threshold>    Sets a threshold value in ms amongst the compared file
+
+plan:
+  #  - name: eth_call
+  # request:
+  #   url: /
+  #   method: POST
+  #   body: '{"jsonrpc":"2.0","method":"eth_call","params":[{"from": "{{ item.from }}", "data": "{{ item.data }}"}],"id":1}'
+  #   headers:
+  #     content-type: application/json
+  # with_items:
+  #   - { from: "7e5f4552091a69125d5dfcb7b8c2659029395bdf", data: "6000600060006000601362123456fa"}
+  - name: eth_blockNumber
+    request:
+      url: /
+      method: POST
+      body: '{"jsonrpc":"2.0","method":"eth_blockNumber","params":[],"id":1}'
+      headers:
+        content-type: application/json

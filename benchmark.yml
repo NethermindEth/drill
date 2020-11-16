@@ -2,7 +2,7 @@
 
 base: 'http://localhost:8545'
 iterations: 1000 # specify the number of iterations you want to run the benchmark
-concurrency: 5 # run your benchmarks choosing the number of concurrent iterations.
+concurrency: 100 # run your benchmarks choosing the number of concurrent iterations.
 rampup: 3 # specify the amount of time it will take drill to start all iterations.
 
 # thresholds: compare the current benchmark performance against a stored one session and fail if a threshold is exceeded.
